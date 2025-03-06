@@ -35,3 +35,36 @@
 
 Including these files in version control ensures that all developers and CI/CD systems use the same Gradle version, avoiding potential build issues caused by version discrepancies.
 
+
+ ### How can upgrade to higher version
+ ```bash
+ ./gradlew --version
+ Gradle 6.1.1
+
+ ./gradlew wrapper --gradle-version 6.2.2
+ ./gradlew --version
+ ```
+ <br><img src="img/grdl.3.png" width=800>
+ 
+### Where does Gradle Wrapper store gradle?
+```bash
+cd $GRADLE_HOME
+cd wrapper/dists
+ls -ltr
+```
+
+### Useful `gradlew` Commands
+
+- `./gradlew tasks`: Lists the tasks runnable from the root project.
+- `./gradlew build`: Assembles and tests the project.
+- `./gradlew clean`: Deletes the build directory.
+- `./gradlew test`: Runs the unit tests.
+- `./gradlew assemble`: Assembles the outputs of the project without running tests.
+- `./gradlew check`: Runs all checks, including tests.
+- `./gradlew dependencies`: Displays all dependencies declared in the project.
+- `./gradlew help`: Displays help information about Gradle.
+- `./gradlew <task> --info`: Provides additional information while running a specific task.
+- `./gradlew <task> --debug`: Provides debug-level logging while running a specific task.
+- `./gradlew <task> --stacktrace`: Prints out the stacktrace for any exceptions that occur during the build.
+
+These commands can be run from the root directory of your project to perform various build and maintenance tasks.
