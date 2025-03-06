@@ -1,9 +1,9 @@
-# gradle-understanding
+### gradle-understanding
 
-# tactiq.io free youtube transcript
-# Gradle Course for Beginners | Get Going with Gradle
-# https://www.youtube.com/watch/R6Z-Sxb837I
-
+tactiq.io free youtube transcript
+Gradle Course for Beginners | Get Going with Gradle
+https://www.youtube.com/watch/R6Z-Sxb837I
+<pre>
 00:00:00.359 hello and welcome to get going with
 00:00:02.000 gradal the fastest way to a working
 00:00:04.440 knowledge of gradal before we get
@@ -1367,3 +1367,4 @@
 00:56:50.520 plugins to get started click on the
 00:56:53.200 gradal build Bible link on screen right
 00:56:57.599 now
+</pre>
