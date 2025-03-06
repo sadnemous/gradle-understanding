@@ -68,3 +68,8 @@ ls -ltr
 - `./gradlew <task> --stacktrace`: Prints out the stacktrace for any exceptions that occur during the build.
 
 These commands can be run from the root directory of your project to perform various build and maintenance tasks.
+
+
+### Java Plugin Task Graph
+<br><img src="img/grdl.4.png" width=600>
+
