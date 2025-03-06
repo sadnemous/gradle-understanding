@@ -339,6 +339,9 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:12:53.800 the gradle version whatever your
 00:12:56.320 environment you should now have Gradle
 00:12:58.079 installed see you in the next
+</pre>
+<img src="img/4.1.png"><br>
+<pre>
 00:13:00.639 lesson in this short lesson you'll learn
 00:13:03.120 the basic structure of a gradle project
 00:13:05.399 in preparation for building your first
@@ -361,6 +364,9 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:13:42.959 structure which is more than sufficient
 00:13:45.079 for many real world use
 00:13:46.959 cases what you see here is the file
+</pre>
+<img src="img/5.png"><br>
+<pre>
 00:13:49.399 structure of a simple single project
 00:13:51.440 gradle build in fact the project is so
 00:13:54.240 simple that the only files here are
