@@ -71,7 +71,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:02:19.640 course we'll focus on the recommended
 00:02:21.480 Kotlin version in later lessons we'll
 </pre>
-<img src="2.png"><br>
+<img src="img/2.png"><br>
 <pre>
 00:02:24.080 look into a few important
 00:02:25.319 characteristics of Kotlin that enable
@@ -107,7 +107,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:03:35.120 the same tests if the code hasn't
 </pre>
 
-<img src="3.png"><br>
+<img src="img/3.png"><br>
 <pre>
 00:03:37.360 changed what are the key gradle Concepts
 00:03:40.560 we'll cover each of these in more detail
@@ -161,7 +161,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:05:32.440 running tests and spring boot for
 00:05:34.319 building web
 </pre>
-<img src="4.png"><br>
+<img src="img/4.png"><br>
 <pre>
 00:05:36.039 applications the next key concept to
 00:05:38.680 understand is the gral task a task
