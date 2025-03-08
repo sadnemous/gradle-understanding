@@ -71,7 +71,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:02:19.640 course we'll focus on the recommended
 00:02:21.480 Kotlin version in later lessons we'll
 </pre>
-<img src="img/2.png"><br>
+<img src="img/2.png" width=800><br>
 <pre>
 00:02:24.080 look into a few important
 00:02:25.319 characteristics of Kotlin that enable
@@ -107,7 +107,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:03:35.120 the same tests if the code hasn't
 </pre>
 
-<img src="img/3.png"><br>
+<img src="img/3.png" width=800><br>
 <pre>
 00:03:37.360 changed what are the key gradle Concepts
 00:03:40.560 we'll cover each of these in more detail
@@ -161,7 +161,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:05:32.440 running tests and spring boot for
 00:05:34.319 building web
 </pre>
-<img src="img/4.png"><br>
+<img src="img/4.png" width=800><br>
 <pre>
 00:05:36.039 applications the next key concept to
 00:05:38.680 understand is the gral task a task
@@ -340,7 +340,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:12:56.320 environment you should now have Gradle
 00:12:58.079 installed see you in the next
 </pre>
-<img src="img/4.1.png"><br>
+<img src="img/4.1.png" width=800><br>
 <pre>
 00:13:00.639 lesson in this short lesson you'll learn
 00:13:03.120 the basic structure of a gradle project
@@ -365,7 +365,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:13:45.079 for many real world use
 00:13:46.959 cases what you see here is the file
 </pre>
-<img src="img/5.png"><br>
+<img src="img/5.png" width=800><br>
 <pre>
 00:13:49.399 structure of a simple single project
 00:13:51.440 gradle build in fact the project is so
@@ -572,6 +572,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:22:14.159 into Version Control see you in the next
 00:22:17.880 lesson welcome back and in this lesson
 00:22:20.520 we're going to talk about one of the
+<img src=img/grdl.7.png width=800><br>
 00:22:21.880 most common use cases for gradle which
 00:22:24.279 is to create a Java project let's first
 00:22:27.480 put gradle aside and consider the most
@@ -621,11 +622,13 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:24:12.799 provides a good starting point so how
 00:24:15.039 can gradle help with this it turns out
 00:24:18.039 that it's extremely simple to set up a
+<img src=img/grdl.8.png width=800><br>
 00:24:20.000 Java project with gradle all you have to
 00:24:22.600 do is apply the Java plug-in which adds
 00:24:25.120 all the functionality you need to meet
 00:24:27.120 the requirements we just covered
 00:24:29.480 remember in the introduction to gradle
+<img src=img/grdl.9.png width=800><br>
 00:24:31.279 lesson when we were talking about
 00:24:32.600 plugins in the build. gr. kts file well
 00:24:36.559 to apply the Java plug-in all you have
@@ -670,6 +673,8 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:26:11.480 important to remember is just that the
 00:26:13.120 compiled classes go into the build
 00:26:15.320 directory the next requirement for a
+
+<img src=img/grdl.10.png width=800><br>
 00:26:17.520 Java project was to manage resources you
 00:26:20.320 guessed it the Java plug-in lets us do
 00:26:22.240 this through another task the task is
@@ -691,6 +696,8 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:27:01.520 go over the directory structure in more
 00:27:03.240 detail later but just know for now that
 00:27:05.559 process resources copies resources into
+
+<img src=img/grdl.11.png width=800><br>
 00:27:08.120 the build directory the next requirement
 00:27:10.840 for Java project was to package our
 00:27:12.840 compiled classes and resources into a
@@ -713,6 +720,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:27:56.919 lesson which is a practical all about
 00:27:59.240 creating your first Java project with
 00:28:01.559 gradle the next requirement for a Java
+<img src=img/grdl.12.png width=800><br>
 00:28:04.000 project was to easily run tests that's
 00:28:06.880 achieved with a task called test which
 00:28:09.399 you run usingg grw test what this does
@@ -725,6 +733,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:28:27.720 it's a 100% success rate the final
 00:28:31.159 requirement we had for Java project was
 00:28:33.279 to easily Define
+<img src=img/grdl.13.png width=800><br>
 00:28:35.039 dependencies the way dependencies are
 00:28:37.159 managed in gradle is in the dependencies
 00:28:39.720 section of build.gradle kts which we
@@ -759,7 +768,8 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:29:49.919 about how the Java plug-in takes classes
 00:29:51.880 and resources processes them in some way
 00:29:54.760 and outputs generated files into the
-00:29:56.760 build Direct Dory the last topic to
+00:29:56.760 build directory the last topic to
+<img src=img/grdl.14.png width=800><br>
 00:29:59.240 cover is the default project layout that
 00:30:01.399 the Java plugin expects using this
 00:30:04.080 standard layout means gradle knows where
@@ -788,6 +798,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:31:04.279 these destination details but it should
 00:31:06.559 help you navigate your way around the
 00:31:08.000 build directory when you need
+<img src=img/grdl.15.png width=800><br>
 00:31:09.799 to in summary applying the Java plug-in
 00:31:12.919 initializes a project as a Java project
 00:31:16.240 the Java plug-in adds tasks for compile
@@ -815,6 +826,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:32:07.039 application if you don't have any
 00:32:08.919 knowledge of java coding that's not a
 00:32:10.880 problem because you'll have access to
+<img src=img/grdl.16.png width=800><br>
 00:32:12.760 all the code you need you just need to
 00:32:15.440 understand at a high level what the
 00:32:16.880 application does and how it's built the
@@ -875,6 +887,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:34:34.520 package in here for our code with a
 00:34:36.679 directory structure of comg hero
 00:34:39.719 language
+<img src=img/grdl.17.png width=800><br>
 00:34:41.000 app inside that new directory create a
 00:34:43.918 Java class so create a file called say
 00:34:46.918 hello. Java and open it for
@@ -884,6 +897,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:34:58.480 project this is all the code for the
 00:35:00.800 application there's a main method that
 00:35:03.040 takes in some
+<img src=img/18.png width=800><br>
 00:35:04.599 arguments the first argument the one
 00:35:06.760 with index zero is the requested
 00:35:09.839 language we take this language and add
@@ -891,6 +905,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:35:15.960 resources on the Java class path the
 00:35:18.920 rest of the code opens the resource
 00:35:21.560 reads it and prints the contents of the
+<img src=img/en.png width=800><br>
 00:35:24.079 first line this means that you can
 00:35:26.480 request to language and if there's a
 00:35:28.240 file present in the resources the
@@ -906,6 +921,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:35:57.319 then create es.
 00:36:00.720 txt and add Ola which from my Spanish
 00:36:04.240 lessons I'm 99% sure means
+<img src=img/es.png width=800><br>
 00:36:07.839 hello this is all the code and resources
 00:36:10.480 we need to run this application now
 00:36:12.560 let's build it we do that by adding the
@@ -923,6 +939,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:36:44.640 of new functionality in our gradle build
 00:36:47.680 go to the command line and type SLG
 00:36:50.400 gradle W tasks to see what tasks are
+<img src=img/task.png width=800><br>
 00:36:54.400 available all the tasks listed under
 00:36:57.040 build tasks were added to the project by
 00:36:59.359 the Java plug-in in the previous lesson
@@ -957,6 +974,8 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:38:28.480 in build lips you now have a jar file
 00:38:31.079 called GetGo with gradle dojar notice
 00:38:34.200 there's no version included because we
+<img src=img/grdl.19.png width=800><br>
+
 00:38:36.280 haven't specified a version in our build
 00:38:39.319 script now we'll try running the
 00:38:41.400 application using the JV file we just
@@ -966,6 +985,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:38:52.160 Spen this runs Java using the jar file
 00:38:55.240 in build Libs passing an argument of Ven
 00:38:58.359 for English hit
+<img src=img/grdl.20.png width=800><br>
 00:39:00.040 enter you'll see an error saying no main
 00:39:02.640 manifest attribute Java doesn't know
 00:39:05.400 what class within the jav file to run we
@@ -975,6 +995,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:39:15.480 Java plug-in we can configure the jav
 00:39:17.920 file in the build script with this
 00:39:19.760 snippet of code a to type it in making
+<img src=img/grdl.21.png width=800><br>
 00:39:22.720 sure that the class package and name
 00:39:24.640 matches the main class you created
 00:39:27.119 this configures the jar task to also
@@ -985,6 +1006,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:39:38.599 running /gr
 00:39:41.280 wjar now rerun the Java command that
 00:39:43.839 failed earlier and you'll see the text
+<img src=img/grdl.22.png width=800><br>
 00:39:46.400 hello output just to prove this works
 00:39:49.440 correctly run the same command but
 00:39:51.720 replace en with es for Spanish it now
@@ -999,6 +1021,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:40:15.280 Java we'll create a test for say hello.
 00:40:18.240 Java So within this directory create the
 00:40:20.480 same package structure comg gradle hero
+<img src=img/grdl.23.png width=800><br>
 00:40:23.760 language
 00:40:25.359 app
 00:40:27.119 now add a new file say hellot test.
@@ -1008,11 +1031,14 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:40:41.520 the junit testing framework that makes
 00:40:44.040 sure the say hello class executes
 00:40:46.280 without
+<img src=img/grdl.24.png width=800><br>
 00:40:47.240 error try running the test with the test
 00:40:50.000 gradle task this will compile test code
 00:40:53.280 process resources then run the test
 00:40:55.480 itself type or paste the command /gr W
 00:40:59.560 test and hit
+<img src=img/grdl.26.png width=800><br>
+00:40:47.240 error try running the test with the test
 00:41:02.920 enter okay we have an error saying it
 00:41:05.319 can't find the or junit Jupiter API
 00:41:08.000 package which is the junit code needed
@@ -1036,16 +1062,19 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:41:48.040 so gradle knows where to find this
 00:41:50.200 dependency typ or paste the repositories
 00:41:52.839 configuration block from the notes
+<img src=img/grdl.27.png width=800><br>
 00:41:54.920 putting it just before the
 00:41:57.280 dependencies this tells Gradle to use
 00:41:59.440 the maven Central
 00:42:01.440 repository run the same command that
+<img src=img/grdl.28.png width=800><br>
 00:42:03.560 failed again and you should see a
 00:42:05.400 successful
 00:42:07.160 build let's double check the test report
 00:42:09.920 located in build SL reports tests test
 00:42:15.800 and open index.html in a
 00:42:18.400 browser sadly you'll see that zero tests
+<img src=img/grdl.29.png width=800><br>
 00:42:21.079 have run so what's going on here well
 00:42:24.119 since junit version 5 is still the
 00:42:26.440 process of being adopted from junit 4 an
@@ -1053,8 +1082,9 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:42:31.200 enable it type or paste the test
 00:42:33.599 configuration block below the
 00:42:35.160 dependencies block this configures tests
+<img src=img/grdl.30.png width=800><br>
 00:42:38.040 to use the junit 5
-00:42:40.559 platform run dogr W test
+00:42:40.559 platform run `./gradlew test`
 00:42:45.880 again refresh the page in your browser
 00:42:48.960 now you'll see1 test was run with a 100%
 00:42:51.800 success rate everything's working
@@ -1087,6 +1117,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:44:02.960 fundamental differences between Kotlin
 00:44:05.240 and
 00:44:06.119 Java semicolons are optional in
+<img src=img/grdl.31.png width=800><br>
 00:44:10.240 Kotlin strings support interpolation by
 00:44:15.280 default Val is used to declare readon
 00:44:19.760 variables and VAR is for mutable
@@ -1098,6 +1129,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:44:35.319 with a Lambda expression defined in
 00:44:37.160 curly brackets and assigned to a
 00:44:39.800 variable called Lambda expression and it
+<img src=img/grdl.32.png width=800><br>
 00:44:43.040 gets executed to print 321
 00:44:46.040 liftoff Lambda expressions are used
 00:44:48.599 heavily in the gradle build script for
@@ -1112,6 +1144,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:45:12.280 this gradle dependency definition for
 00:45:14.640 example when we call the implementation
 00:45:17.200 function we use parentheses to pass the
+<img src=img/grdl.33.png width=800><br>
 00:45:19.800 dependency string
 00:45:21.960 argument however when a Lambda
 00:45:24.000 expression is the final argument to a
@@ -1154,6 +1187,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:46:45.640 best use of it in your day-to-day work
 00:46:48.559 we already saw in introduction to gradle
 00:46:51.280 how tasks can have dependencies on other
+<img src=img/grdl.34.png width=800><br>
 00:46:54.040 tasks a dependency see on another task
 00:46:57.280 means the other task runs first let's
 00:47:00.200 use as an example some tasks added by
@@ -1182,6 +1216,7 @@ https://www.youtube.com/watch/R6Z-Sxb837I
 00:47:59.839 complete task graph yes there's a lot to
 00:48:03.079 look at here don't worry as we're going
 00:48:05.319 to step through this bit by bit the
+<img src=img/grdl.35.png width=800><br>
 00:48:08.000 lines that connect a task on the left to
 00:48:10.160 a task to the right imply dependency on
 00:48:13.280 the task to the right so for example
