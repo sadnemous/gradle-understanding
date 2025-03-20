@@ -101,11 +101,11 @@ tasks.register<Exec>("generateOpenApiSpec") {
 
 //tasks.getByName("generateOpenApiSpec").dependsOn(tasks.getByName("build"))
 //tasks.getByName("build").dependsOn(tasks.getByName("generateOpenApiSpec"))
+```
 
-
-
+### let us see basic example of tasks
+```kotlin
 Sample:
-
 
 tasks.withType<Test> {
     useJUnitPlatform()
