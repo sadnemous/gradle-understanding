@@ -154,7 +154,7 @@ $ gradle -q count
 // }
 ```
 
-
+### other approach with explanation:
 The provided code snippet is a Gradle Kotlin DSL script that defines a custom task named `generateOpenApiSpec`. This task is registered using the `tasks.register` method and is configured to execute a Java application using the `JavaExec` class.
 
 The `classpath` property is set to the runtime classpath of the main source set, which ensures that all necessary classes and dependencies are available when the task runs. This is achieved by referencing `sourceSets["main"].runtimeClasspath`.
@@ -174,7 +174,8 @@ tasks.register("generateOpenApiSpec", JavaExec::class) {
      args("--spring.config.location=classpath:application.properties", "--springdoc.api-docs.path=/v3/api-docs", "--springdoc.output-file=build/openapi.yaml")
 }
 ```
-another approach did not work
+
+### another approach did not work
 ```kotlin
 //===============
 springdocOpenApi {
