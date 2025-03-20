@@ -1,4 +1,6 @@
 ### task 1 - not working
+
+#### Approach #1
 ```kotlin
 import org.gradle.api.tasks.Exec
 
@@ -13,9 +15,10 @@ tasks.register<Exec>("generateOpenApiSpec") {
 tasks.named("build").configure {
     dependsOn("generateOpenApiSpec")
 }
+```
 
-
-/*
+#### Approach #2
+```kotlin
 tasks.register<Exec>("generateOpenApiSpec") {
     group = "openapi"
     description = "Generates OpenAPI v3 specification"
@@ -34,10 +37,11 @@ tasks.register<Exec>("generateOpenApiSpec") {
         println("OpenAPI spec generated at: $outputFile")
     }
 }
-*/
+```
 
 
-/*
+#### Approach #3
+```kotlin
 tasks.register<JavaExec>("generateOpenApiSpec") {
     group = "documentation"
     description = "Generates OpenAPI v3 specification from the running Spring Boot application."
@@ -57,11 +61,15 @@ tasks.register<JavaExec>("generateOpenApiSpec") {
     }
 }
 
+
 // Ensure the OpenAPI spec is generated when the 'jar' task is called
 tasks.named("jar").configure {
     dependsOn("generateOpenApiSpec")
 }
-*/
+```
+
+#### Approach #4
+```kotlin
 tasks.register<JavaExec>("generateOpenApiSpec") {
     group = "documentation"
     description = "Generates OpenAPI v3 specification from the running Spring Boot application."
@@ -84,20 +92,22 @@ tasks.register<JavaExec>("generateOpenApiSpec") {
     //}
 }
 
-/*
+
 // Ensure the OpenAPI spec is generated when the 'jar' task is called
 tasks.named("build").configure {
     dependsOn("generateOpenApiSpec")
 }
+```
 
-
+#### Approach #5
+```kotlin
 tasks.register<Exec>("generateOpenApiSpec") {
             group = "documentation"
             description = "Downloads OpenAPI v3 specification from the running Spring Boot application."
 
             commandLine("sh", "-c", "curl -o build/openapi/openapi.yaml http://localhost:9090/v3/api-docs.yaml")
 }
-*/
+
 
 //tasks.getByName("generateOpenApiSpec").dependsOn(tasks.getByName("build"))
 //tasks.getByName("build").dependsOn(tasks.getByName("generateOpenApiSpec"))
