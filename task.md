@@ -152,11 +152,27 @@ $ gradle -q count
 //     outputFileName.set("openapi")
 //     fileType.set(org.springdoc.openapi.gradle.plugin.FileType.YAML)
 // }
-// tasks.register("generateOpenApiSpec", JavaExec::class) {
-//     classpath = sourceSets.main.runtimeClasspath
-//     mainClass.set("org.springdoc.core.OpenAPIBuilder") // Use the correct class
-//     args("--spring.config.location=classpath:application.properties", "--springdoc.api-docs.path=/v3/api-docs", "--springdoc.output-file=build/openapi.yaml")
-// }
+
+
+
+The provided code snippet is a Gradle Kotlin DSL script that defines a custom task named `generateOpenApiSpec`. This task is registered using the `tasks.register` method and is configured to execute a Java application using the `JavaExec` class.
+
+The `classpath` property is set to the runtime classpath of the main source set, which ensures that all necessary classes and dependencies are available when the task runs. This is achieved by referencing `sourceSets["main"].runtimeClasspath`.
+
+The `mainClass.set` method specifies the main class to be executed by the task. In this case, it is set to `org.springdoc.core.OpenAPIBuilder`, which is presumably a class responsible for generating OpenAPI specifications.
+
+The `args` method is used to pass command-line arguments to the main class. Here, two arguments are provided:
+1. `--springdoc.api-docs.path=/v3/api-docs`: This argument specifies the path where the SpringDoc API documentation is available.
+2. `--springdoc.output-file=build/openapi.yaml`: This argument specifies the output file where the generated OpenAPI specification will be saved, in this case, `build/openapi.yaml`.
+
+Overall, this task automates the process of generating an OpenAPI specification for a Spring application by invoking the `OpenAPIBuilder` class with the appropriate arguments.
+
+
+tasks.register("generateOpenApiSpec", JavaExec::class) {
+     classpath = sourceSets.main.runtimeClasspath
+     mainClass.set("org.springdoc.core.OpenAPIBuilder") // Use the correct class
+     args("--spring.config.location=classpath:application.properties", "--springdoc.api-docs.path=/v3/api-docs", "--springdoc.output-file=build/openapi.yaml")
+}
 
 
 //===============
