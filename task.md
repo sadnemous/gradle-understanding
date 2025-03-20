@@ -152,7 +152,7 @@ $ gradle -q count
 //     outputFileName.set("openapi")
 //     fileType.set(org.springdoc.openapi.gradle.plugin.FileType.YAML)
 // }
-
+```
 
 
 The provided code snippet is a Gradle Kotlin DSL script that defines a custom task named `generateOpenApiSpec`. This task is registered using the `tasks.register` method and is configured to execute a Java application using the `JavaExec` class.
@@ -167,27 +167,28 @@ The `args` method is used to pass command-line arguments to the main class. Here
 
 Overall, this task automates the process of generating an OpenAPI specification for a Spring application by invoking the `OpenAPIBuilder` class with the appropriate arguments.
 
-
+```kotlin
 tasks.register("generateOpenApiSpec", JavaExec::class) {
      classpath = sourceSets.main.runtimeClasspath
      mainClass.set("org.springdoc.core.OpenAPIBuilder") // Use the correct class
      args("--spring.config.location=classpath:application.properties", "--springdoc.api-docs.path=/v3/api-docs", "--springdoc.output-file=build/openapi.yaml")
 }
-
-
+```
+another approach did not work
+```kotlin
 //===============
-/*springdocOpenApi {
+springdocOpenApi {
     outputDir.set(file("$buildDir/specs"))
     outputFileName.set("openapi")
     fileType.set(org.springdoc.openapi.gradle.plugin.FileType.YAML)
-}*/
-/*
+}
+
 tasks.register("generateOpenApiSpec", JavaExec::class) {
     classpath = sourceSets["main"].runtimeClasspath
     mainClass.set("org.springdoc.core.OpenAPIBuilder") // Use the correct class
     args("--springdoc.api-docs.path=/v3/api-docs", "--springdoc.output-file=build/openapi.yaml")
 }
- */
+ 
 
 
 openApi {
@@ -197,7 +198,7 @@ openApi {
     //forkProperties.set("-Dserver.port=9090")
     waitTimeInSeconds.set(60)
 } 
-
+```
 //tasks.getByName("build").dependsOn(tasks.getByName("openApi"))
 // make sure the openapi task is executed before the build task
 //tasks.getByName("generateOpenApiSpec").dependsOn(tasks.getByName("build"))
