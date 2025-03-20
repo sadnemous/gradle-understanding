@@ -198,11 +198,10 @@ openApi {
     //forkProperties.set("-Dserver.port=9090")
     waitTimeInSeconds.set(60)
 } 
-```
-//tasks.getByName("build").dependsOn(tasks.getByName("openApi"))
+
+tasks.getByName("build").dependsOn(tasks.getByName("openApi"))
 // make sure the openapi task is executed before the build task
-//tasks.getByName("generateOpenApiSpec").dependsOn(tasks.getByName("build"))
+tasks.getByName("generateOpenApiSpec").dependsOn(tasks.getByName("build"))
 
-//tasks.getByName("build").finalizedBy(tasks.getByName("generateOpenApiSpec"))
-
+tasks.getByName("build").finalizedBy(tasks.getByName("generateOpenApiSpec"))
 ```
