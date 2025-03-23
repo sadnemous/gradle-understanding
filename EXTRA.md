@@ -1,3 +1,87 @@
+## Presentation
+Gradle with Kotlin DSL - A Comprehensive Guide
+
+### Slide 1: Introduction
+
+Title: Introduction to Gradle & Kotlin DSLContent:
+
+What is Gradle? Gradle is a powerful build automation tool used for JVM-based projects, including Java, Kotlin, and Android.
+
+Why Kotlin DSL instead of Groovy? Kotlin DSL provides better type safety, IDE support, and modern syntax compared to Groovy.
+
+Overview of a Gradle project structure: Gradle projects typically contain build.gradle.kts, settings.gradle.kts, and structured source directories.
+
+### Slide 2: Setting Up a Gradle Project
+
+Title: Getting Started with Gradle Kotlin DSLContent:
+
+Installing Gradle: Install Gradle via SDKMAN, Homebrew, or direct download.
+
+Creating a new project (gradle init): Use the gradle init command to create a new Kotlin DSL-based project.
+
+Understanding build.gradle.kts & settings.gradle.kts: These files define dependencies, plugins, and settings.
+
+### Slide 3: Plugins & Dependencies
+
+Title: Declaring Plugins and DependenciesContent:
+
+Applying plugins: Plugins like java, application, and kotlin enable various functionalities.
+
+Adding dependencies: Declare dependencies using implementation, testImplementation, and runtimeOnly.
+
+Using a dependency version catalog: A structured way to manage dependencies in libs.versions.toml.
+
+### Slide 4: Configuring Tasks
+
+Title: Customizing Gradle TasksContent:
+
+Creating custom tasks: Define tasks using tasks.register<Copy>("taskName").
+
+Task dependencies (dependsOn, mustRunAfter): Control execution order of tasks.
+
+Using doFirst and doLast: Add actions before or after a task runs.
+
+### Slide 5: Gradle Build Lifecycle
+
+Title: Understanding Build PhasesContent:
+
+Initialization Phase: Sets up Gradle and identifies projects.
+
+Configuration Phase: Evaluates build scripts and task dependencies.
+
+Execution Phase: Executes required tasks like compile, test, build.
+
+### Slide 6: Multi-Module Projects
+
+Title: Working with Multi-Module ProjectsContent:
+
+Structuring a multi-module project: Each module has its own build.gradle.kts.
+
+Configuring settings.gradle.kts: Register subprojects with include("module-name").
+
+Sharing dependencies across modules: Use allprojects {} or subprojects {} to apply common dependencies.
+
+### Slide 7: Advanced Topics
+
+Title: Advanced Gradle ConceptsContent:
+
+Writing reusable Gradle scripts: Extract logic into .gradle.kts script files.
+
+Using properties & environment variables: Store configurable settings for builds.
+
+Optimizing builds with caching & parallel execution: Improve performance with gradle.properties settings.
+
+### Slide 8: Best Practices & Conclusion
+
+Title: Best Practices & ResourcesContent:
+
+Comparing Kotlin DSL vs. Groovy DSL: Kotlin offers better static typing and IDE support.
+
+Common pitfalls to avoid: Avoid unnecessary complexity, use structured dependencies.
+
+Recommended resources: Gradle official docs, Kotlin DSL samples, Gradle forums.
+
+
 ### gradle-understanding
 
 tactiq.io free youtube transcript
