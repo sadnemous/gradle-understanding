@@ -3,39 +3,39 @@ Gradle with Kotlin DSL - A Comprehensive Guide
 
 ### Slide 1: Introduction
 
-Title: Introduction to Gradle & Kotlin DSLContent:
+#### Title: Introduction to Gradle & Kotlin DSLContent:
 
-What is Gradle? Gradle is a powerful build automation tool used for JVM-based projects, including Java, Kotlin, and Android.
+<b>What is Gradle?</b> Gradle is a powerful build automation tool used for JVM-based projects, including Java, Kotlin, and Android.
 
-Why Kotlin DSL instead of Groovy? Kotlin DSL provides better type safety, IDE support, and modern syntax compared to Groovy.
+<b>Why Kotlin DSL instead of Groovy?</b> Kotlin DSL provides better type safety, IDE support, and modern syntax compared to Groovy.
 
-Overview of a Gradle project structure: Gradle projects typically contain build.gradle.kts, settings.gradle.kts, and structured source directories.
+<b>Overview of a Gradle</b> project structure: Gradle projects typically contain build.gradle.kts, settings.gradle.kts, and structured source directories.
 
 ### Slide 2: Setting Up a Gradle Project
 
-Title: Getting Started with Gradle Kotlin DSLContent:
+#### Title: Getting Started with Gradle Kotlin DSLContent:
 
-Installing Gradle: Install Gradle via SDKMAN, Homebrew, or direct download.
+<b>Installing Gradle:</b> Install Gradle via SDKMAN, Homebrew, or direct download.
 
-Creating a new project (gradle init): Use the gradle init command to create a new Kotlin DSL-based project.
+<b>Creating a new project (gradle init):</b> Use the gradle init command to create a new Kotlin DSL-based project.
 
-Understanding build.gradle.kts & settings.gradle.kts: These files define dependencies, plugins, and settings.
+<b>Understanding build.gradle.kts & settings.gradle.kts:</b> These files define dependencies, plugins, and settings.
 
 ### Slide 3: Plugins & Dependencies
 
-Title: Declaring Plugins and DependenciesContent:
+<b>Title</b>: Declaring Plugins and DependenciesContent:
 
-Applying plugins: Plugins like java, application, and kotlin enable various functionalities.
+<b>Applying plugins</b>: Plugins like java, application, and kotlin enable various functionalities.
 
-Adding dependencies: Declare dependencies using implementation, testImplementation, and runtimeOnly.
+<b>Adding dependencies</b>: Declare dependencies using implementation, testImplementation, and runtimeOnly.
 
-Using a dependency version catalog: A structured way to manage dependencies in libs.versions.toml.
+<b>Using a dependency version catalog</b>: A structured way to manage dependencies in libs.versions.toml.
 
 ### Slide 4: Configuring Tasks
 
-Title: Customizing Gradle TasksContent:
+<b>Title</b>: Customizing Gradle TasksContent:
 
-Creating custom tasks: Define tasks using tasks.register<Copy>("taskName").
+<b>Creating custom tasks</b>: Define tasks using tasks.register<Copy>("taskName").
 
 Task dependencies (dependsOn, mustRunAfter): Control execution order of tasks.
 
